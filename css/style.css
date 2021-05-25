@@ -569,3 +569,13 @@ label {
   text-decoration: underline;
   color: #1f386e;
 }
+@media screen and (max-width: 460px) {
+  #menu .phone {
+    font-family: "Montserrat", sans-serif;
+    margin: 4px 0 0 120px;
+    float: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+  }
+}
