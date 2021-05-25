@@ -555,3 +555,9 @@ label {
     bottom: 845px;
   }
 }
+@media screen and (max-width: 460px) {
+  .intro h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
