@@ -561,3 +561,11 @@ label {
     line-height: 6rem;
   }
 }
+
+.portfolio-item h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+  color: #1f386e;
+}
