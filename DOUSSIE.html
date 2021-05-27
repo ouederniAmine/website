@@ -16,6 +16,11 @@
       sizes="72x72"
       href="img/apple-touch-icon-72x72.png"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
@@ -174,48 +179,80 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-5">
-                  <div class="product-details-large" id="ProductPhoto">
-                    <img
-                      id="ProductPhotoImg"
-                      class="product-zoom"
-                      data-image-id=""
-                      alt=""
-                      src="img\wood\dousssie.jpg"
-                    />
+                  <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/doussie.jpg"
+                            alt="Doussie wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/doussse.jpg"
+                            alt="Doussie wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/dousssie.jpg"
+                            alt="Doussie wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/doussie.jpg"
+                            alt="Doussie wood"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add Arrows -->
                   </div>
-                  <div
-                    id="ProductThumbs"
-                    class="product-thumbnail owl-carousel"
-                  >
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\doussse.jpg"
-                      data-image="img\wood\doussse.jpg"
-                      data-zoom-image="img\wood\doussse.jpg"
-                      data-image-id="6995357106246"
-                    >
-                      <img src="img\wood\doussse.jpg" alt=""
-                    /></a>
-
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\dousssie.jpg"
-                      data-image="img\wood\dousssie.jpg"
-                      data-zoom-image="img\wood\dousssie.jpg"
-                      data-image-id="6995358023750"
-                    >
-                      <img src="img\wood\dousssie.jpg" alt=""
-                    /></a>
-
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\doussie.jpg"
-                      data-image="img\wood\doussie.jpg"
-                      data-zoom-image="img\wood\doussie.jpg"
-                      data-image-id="6995357302854"
-                    >
-                      <img src="img\wood\doussie.jpg" alt=""
-                    /></a>
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="swiper-slide-container">
+                            <img
+                              src="./img/wood/doussie.jpg"
+                              alt="Doussie wood"
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-slide-container">
+                            <img
+                              src="./img/wood/doussse.jpg"
+                              alt="Doussie wood"
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-slide-container">
+                            <img
+                              src="./img/wood/dousssie.jpg"
+                              alt="Doussie wood"
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-slide-container">
+                            <img
+                              src="./img/wood/doussie.jpg"
+                              alt="Doussie wood"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-7">
@@ -355,74 +392,6 @@
               </div>
             </div>
           </div>
-          <style type="text/css">
-            .product-details .countdown-timer-wrapper {
-              display: none !important;
-            }
-          </style>
-
-          <script>
-            function productZoom() {
-              $(".product-zoom").elevateZoom({
-                gallery: "ProductThumbs",
-                galleryActiveClass: "active",
-                zoomType: "inner",
-              });
-              $(".product-zoom").on("click", function (e) {
-                var ez = $(".product-zoom").data("elevateZoom");
-                $.fancybox(ez.getGalleryList());
-                return false;
-              });
-            }
-            function productZoomDisable() {
-              if ($(window).width() < 767) {
-                $(".zoomContainer").remove();
-                $(".product-zoom").removeData("elevateZoom");
-                $(".product-zoom").removeData("zoomImage");
-              } else {
-                productZoom();
-              }
-            }
-
-            productZoomDisable();
-
-            $(window).resize(function () {
-              productZoomDisable();
-            });
-          </script>
-          <script>
-            $(".product-thumbnail").owlCarousel({
-              loop: true,
-              center: true,
-              nav: true,
-              dots: false,
-              margin: 10,
-              autoplay: false,
-              autoplayTimeout: 5000,
-              navText: [
-                '<i class="fa fa-angle-left"></i>',
-                '<i class="fa fa-angle-right"></i>',
-              ],
-              item: 3,
-              responsive: {
-                0: {
-                  items: 2,
-                },
-                480: {
-                  items: 3,
-                },
-                992: {
-                  items: 3,
-                },
-                1170: {
-                  items: 3,
-                },
-                1200: {
-                  items: 3,
-                },
-              },
-            });
-          </script>
         </div>
       </main>
     </div>
@@ -441,5 +410,29 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var galleryTop = new Swiper(".gallery-top", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        loopedSlides: 4,
+      });
+      var galleryThumbs = new Swiper(".gallery-thumbs", {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 4,
+      });
+      galleryTop.controller.control = galleryThumbs;
+      galleryThumbs.controller.control = galleryTop;
+    </script>
   </body>
 </html>

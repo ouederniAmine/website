@@ -29,7 +29,11 @@
       type="text/css"
       href="fonts/font-awesome/css/font-awesome.css"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Stylesheet
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -174,66 +178,92 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-5">
-                  <div class="product-details-large" id="ProductPhoto">
-                    <img
-                      id="ProductPhotoImg"
-                      class="product-zoom"
-                      data-image-id=""
-                      alt=""
-                      src="img\wood\bosse (1).jpg"
-                    />
+                  <!-- Swiper -->
+
+                  <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i01_Kosipo-QC.jpg"
+                            alt="Kosipo wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i01_kosipo.jpeg" alt="Kosipo wood" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i02_kosipo1.jpg"
+                            alt="Kosipo wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i04_kosipo.jpeg" alt="Kosipo wood" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i03_kosipo.jpg"
+                            alt="Kosipo wood"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add Arrows -->
                   </div>
-                  <div
-                    id="ProductThumbs"
-                    class="product-thumbnail owl-carousel"
-                  >
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\bosse (1).jpg"
-                      data-image="img\wood\bosse (1).jpg"
-                      data-zoom-image="img\wood\bosse (1).jpg"
-                      data-image-id="6995357106246"
-                    >
-                      <img src="img\wood\bosse (1).jpg" alt=""
-                    /></a>
-
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\bosse.jpg"
-                      data-image="img\wood\bosse.jpg"
-                      data-zoom-image="img\wood\bosse.jpg"
-                      data-image-id="6995358023750"
-                    >
-                      <img src="img\wood\bosse.jpg" alt=""
-                    /></a>
-
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\FOTO_BOSSE_26.jpg"
-                      data-image="img\wood\FOTO_BOSSE_26.jpg"
-                      data-zoom-image="img\wood\FOTO_BOSSE_26.jpg"
-                      data-image-id="6995357302854"
-                    >
-                      <img src="img\wood\FOTO_BOSSE_26.jpg" alt=""
-                    /></a>
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i01_Kosipo-QC.jpg"
+                            alt="Kosipo wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i01_kosipo.jpeg" alt="Kosipo wood" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i02_kosipo1.jpg"
+                            alt="Kosipo wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i04_kosipo.jpeg" alt="Kosipo wood" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i03_kosipo.jpg"
+                            alt="Kosipo wood"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
                 <div class="col-md-7">
                   <div class="single-product-content">
-                    <form
-                      method="post"
-                      id="AddToCartForm"
-                      accept-charset="UTF-8"
-                      class="shopify-product-form"
-                      enctype="multipart/form-data"
-                    >
-                      <input
-                        type="hidden"
-                        name="form_type"
-                        value="product"
-                      /><input type="hidden" name="utf8" value="✓" />
+              
                       <div class="product-details">
-                        <h1 id="title" class="single-product-name">Bossie</h1>
+                        <h1 id="title" class="single-product-name">KOSSIPO</h1>
                         <div class="single-product-reviews">
                           <span
                             class="shopify-product-reviews-badge"
@@ -245,7 +275,7 @@
                           <div class="product-discount">
                             <span class="price"
                               ><span id="Price" class="money"
-                                >FAS €740</span
+                                >FAS €1100</span
                               ></span
                             >
                           </div>
@@ -254,75 +284,23 @@
                           <div class="product-discount">
                             <span class="price"
                               ><span id="Price" class="money"
-                                >AIC €450</span
+                                >AIC €550</span
                               ></span
                             >
                           </div>
                         </div>
 
                         <div id="info" class="product-info">
-                          BOSSE Sawn Timber AD CBM/MONTH 2 METER UP 10 CONTAINER
-                          OF 40 FEET /MONTH
+                          KOSSIPO Sawn Timber AD CBM/MONTH 2METER UP
+10 CONTAINER OF 40 FEET /MONTH 
                           <br /><br />
-                          Bosse is initially a pale pinkish brown, darkening
-                          with age to a more golden to medium brown. Pale
-                          yellowish sapwood is well defined. Can be highly
-                          figured, with grain patterns such as pommele being
-                          sought after in veneer form..
-                          <br />
-                          <br />
-                          Grain can be straight, interlocked, wavy, or anything
-                          in between. (Veneer sheets also exhibit a wide range
-                          of grain patterns.) Texture is medium to fine, with a
-                          good natural luster.<br />
-                          <br />
-                          Results may vary depending upon the grain of the wood:
-                          interlocked and/or quartersawn pieces can pose a
-                          difficulty planing, with tearout being common. Silica
-                          is present in this wood, causing cutting edges to
-                          blunt and dull at an increased rate. Glues, turns, and
-                          finishes well.
-                        </div>
+                          The wood is red brown with purplish glints. It darkens with light. Deposits of black resin in the pores. Ribbon like aspect on quartersawn. It has clearly demarcated sapwood. The grain is straight or interlocked and the texture is coarse.                          <br /> <br>
+                          The blunting effect varies from quite high to very high (silica) and peeling and slicing is reported to be good. Requires power. Sometimes difficulties due to interlocked grain (tearing). Nailing is good and gluing is correct. It dries normal to slowly. The drying of backsawn is more difficult and slower with higher risks of distortion. Quartersawn well dry is recommended for end-uses in exterior. <br><br>
 
-                        <div class="single-product-action">
-                          <div class="product-variant-option">
-                            <select
-                              name="id"
-                              id="productSelect"
-                              class="product-single__variants"
-                              style="display: none"
-                            >
-                              <option
-                                selected="selected"
-                                data-sku="YQT71020193"
-                                value="19506517377094"
-                              >
-                                Default Title -
-                                <span class="money">$20.66 USD</span>
-                              </option>
-                            </select>
-                            <script>
-                              jQuery(function () {
-                                jQuery(".swatch :radio").change(function () {
-                                  var optionIndex = jQuery(this)
-                                    .closest(".swatch")
-                                    .attr("data-option-index");
-                                  var optionValue = jQuery(this).val();
-                                  jQuery(this)
-                                    .closest("form")
-                                    .find(".single-option-selector")
-                                    .eq(optionIndex)
-                                    .val(optionValue)
-                                    .trigger("change");
-                                });
-                              });
-                            </script>
-                          </div>
-                          <style>
-                            .product-variant-option .selector-wrapper {
-                              display: none;
-                            }
-                          </style>
+
+                          <br />
+                          Kosipo is moderately durable to durable to fungi and is durable to dry wood borers; sapwood demarcated (risk limited to sapwood).
+                      
                           <div class="product-add-to-cart">
                             <span class="control-label">Quantity</span>
                             <div class="cart-plus-minus">
@@ -333,9 +311,10 @@
                                 value="1"
                               />
                             </div>
+                            
                             <div class="add">
                               <button
-                                type="submit"
+                              
                                 class="add-to-cart ajax-spin-cart"
                                 id="AddToCart"
                               >
@@ -343,10 +322,14 @@
                                 <span
                                   class="list-cart-title cart-title"
                                   id="AddToCartText"
-                                  >Add to cart</span
+                                  >Contact Us</span
                                 >
                               </button>
-
+                              <script type="text/javascript">
+                                document.getElementById("AddToCart").onclick = function () {
+                                    location.href = "index.html#contact";
+                                };
+                            </script>
                               <div class="single-product-wishlist">
                                 <a
                                   class="add-to-cart action-wishlist wishlist"
@@ -365,74 +348,6 @@
               </div>
             </div>
           </div>
-          <style type="text/css">
-            .product-details .countdown-timer-wrapper {
-              display: none !important;
-            }
-          </style>
-
-          <script>
-            function productZoom() {
-              $(".product-zoom").elevateZoom({
-                gallery: "ProductThumbs",
-                galleryActiveClass: "active",
-                zoomType: "inner",
-              });
-              $(".product-zoom").on("click", function (e) {
-                var ez = $(".product-zoom").data("elevateZoom");
-                $.fancybox(ez.getGalleryList());
-                return false;
-              });
-            }
-            function productZoomDisable() {
-              if ($(window).width() < 767) {
-                $(".zoomContainer").remove();
-                $(".product-zoom").removeData("elevateZoom");
-                $(".product-zoom").removeData("zoomImage");
-              } else {
-                productZoom();
-              }
-            }
-
-            productZoomDisable();
-
-            $(window).resize(function () {
-              productZoomDisable();
-            });
-          </script>
-          <script>
-            $(".product-thumbnail").owlCarousel({
-              loop: true,
-              center: true,
-              nav: true,
-              dots: false,
-              margin: 10,
-              autoplay: false,
-              autoplayTimeout: 5000,
-              navText: [
-                '<i class="fa fa-angle-left"></i>',
-                '<i class="fa fa-angle-right"></i>',
-              ],
-              item: 3,
-              responsive: {
-                0: {
-                  items: 2,
-                },
-                480: {
-                  items: 3,
-                },
-                992: {
-                  items: 3,
-                },
-                1170: {
-                  items: 3,
-                },
-                1200: {
-                  items: 3,
-                },
-              },
-            });
-          </script>
         </div>
       </main>
     </div>
@@ -446,10 +361,35 @@
         </p>
       </div>
     </div>
-    <script type="text/javascript" src="js/new.js"></script>
+
+   
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+    <script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var galleryTop = new Swiper(".gallery-top", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        loopedSlides: 4,
+      });
+      var galleryThumbs = new Swiper(".gallery-thumbs", {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 4,
+      });
+      galleryTop.controller.control = galleryThumbs;
+      galleryThumbs.controller.control = galleryTop;
+    </script>
   </body>
 </html>

@@ -7,6 +7,11 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="./css/proStyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -174,49 +179,85 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-5">
-                  <div class="product-details-large" id="ProductPhoto">
-                    <img
-                      id="ProductPhotoImg"
-                      class="product-zoom"
-                      data-image-id=""
-                      alt=""
-                      src="img\wood\bosse (1).jpg"
-                    />
+                   <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i01_boosee.jpg"
+                            alt="Boose wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i01_bosse-500x500.jpg"
+                            alt="Boose wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/bosse (1).jpg" alt="Boose wood" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/bosse.jpg"
+                            alt="Boose wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/bosse (1).jpg" alt="Boose wood" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add Arrows -->
                   </div>
-                  <div
-                    id="ProductThumbs"
-                    class="product-thumbnail owl-carousel"
-                  >
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\bosse (1).jpg"
-                      data-image="img\wood\bosse (1).jpg"
-                      data-zoom-image="img\wood\bosse (1).jpg"
-                      data-image-id="6995357106246"
-                    >
-                      <img src="img\wood\bosse (1).jpg" alt=""
-                    /></a>
-
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\bosse.jpg"
-                      data-image="img\wood\bosse.jpg"
-                      data-zoom-image="img\wood\bosse.jpg"
-                      data-image-id="6995358023750"
-                    >
-                      <img src="img\wood\bosse.jpg" alt=""
-                    /></a>
-
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\FOTO_BOSSE_26.jpg"
-                      data-image="img\wood\FOTO_BOSSE_26.jpg"
-                      data-zoom-image="img\wood\FOTO_BOSSE_26.jpg"
-                      data-image-id="6995357302854"
-                    >
-                      <img src="img\wood\FOTO_BOSSE_26.jpg" alt=""
-                    /></a>
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i01_Tali-Wood.jpg"
+                            alt="Tali wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i02_tali 3.jpg"
+                            alt="Tali wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i03_tali1.jpg" alt="Tali wood" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i04_tali h.jpg"
+                            alt="Tali wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i05_tali.jpg" alt="Boose wood" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                 
+                
                 </div>
                 <div class="col-md-7">
                   <div class="single-product-content">
@@ -365,73 +406,7 @@
               </div>
             </div>
           </div>
-          <style type="text/css">
-            .product-details .countdown-timer-wrapper {
-              display: none !important;
-            }
-          </style>
-
-          <script>
-            function productZoom() {
-              $(".product-zoom").elevateZoom({
-                gallery: "ProductThumbs",
-                galleryActiveClass: "active",
-                zoomType: "inner",
-              });
-              $(".product-zoom").on("click", function (e) {
-                var ez = $(".product-zoom").data("elevateZoom");
-                $.fancybox(ez.getGalleryList());
-                return false;
-              });
-            }
-            function productZoomDisable() {
-              if ($(window).width() < 767) {
-                $(".zoomContainer").remove();
-                $(".product-zoom").removeData("elevateZoom");
-                $(".product-zoom").removeData("zoomImage");
-              } else {
-                productZoom();
-              }
-            }
-
-            productZoomDisable();
-
-            $(window).resize(function () {
-              productZoomDisable();
-            });
-          </script>
-          <script>
-            $(".product-thumbnail").owlCarousel({
-              loop: true,
-              center: true,
-              nav: true,
-              dots: false,
-              margin: 10,
-              autoplay: false,
-              autoplayTimeout: 5000,
-              navText: [
-                '<i class="fa fa-angle-left"></i>',
-                '<i class="fa fa-angle-right"></i>',
-              ],
-              item: 3,
-              responsive: {
-                0: {
-                  items: 2,
-                },
-                480: {
-                  items: 3,
-                },
-                992: {
-                  items: 3,
-                },
-                1170: {
-                  items: 3,
-                },
-                1200: {
-                  items: 3,
-                },
-              },
-            });
+         
           </script>
         </div>
       </main>
@@ -451,5 +426,30 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      var galleryTop = new Swiper(".gallery-top", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        loopedSlides: 4,
+      });
+      var galleryThumbs = new Swiper(".gallery-thumbs", {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 4,
+      });
+      galleryTop.controller.control = galleryThumbs;
+      galleryThumbs.controller.control = galleryTop;
+    </script>
   </body>
 </html>

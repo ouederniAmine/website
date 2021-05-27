@@ -29,7 +29,11 @@
       type="text/css"
       href="fonts/font-awesome/css/font-awesome.css"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Stylesheet
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -174,66 +178,90 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-5">
-                  <div class="product-details-large" id="ProductPhoto">
-                    <img
-                      id="ProductPhotoImg"
-                      class="product-zoom"
-                      data-image-id=""
-                      alt=""
-                      src="img\wood\bosse (1).jpg"
-                    />
+                  <!-- Swiper -->
+
+                  <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i01_andoung 1.jpg"
+                            alt="Andoung wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i01_andoung.jpg"
+                            alt="Andoung wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i02_andougng.jpg" alt="Andoung wood" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i04_AANDOUNG.jpg"
+                            alt="Andoung wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i03_ANDOUNG.jpg" alt="Andoung wood" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add Arrows -->
                   </div>
-                  <div
-                    id="ProductThumbs"
-                    class="product-thumbnail owl-carousel"
-                  >
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\bosse (1).jpg"
-                      data-image="img\wood\bosse (1).jpg"
-                      data-zoom-image="img\wood\bosse (1).jpg"
-                      data-image-id="6995357106246"
-                    >
-                      <img src="img\wood\bosse (1).jpg" alt=""
-                    /></a>
-
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\bosse.jpg"
-                      data-image="img\wood\bosse.jpg"
-                      data-zoom-image="img\wood\bosse.jpg"
-                      data-image-id="6995358023750"
-                    >
-                      <img src="img\wood\bosse.jpg" alt=""
-                    /></a>
-
-                    <a
-                      class="product-single__thumbnail"
-                      href="img\wood\FOTO_BOSSE_26.jpg"
-                      data-image="img\wood\FOTO_BOSSE_26.jpg"
-                      data-zoom-image="img\wood\FOTO_BOSSE_26.jpg"
-                      data-image-id="6995357302854"
-                    >
-                      <img src="img\wood\FOTO_BOSSE_26.jpg" alt=""
-                    /></a>
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i01_Tali-Wood.jpg"
+                            alt="Tali wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i02_tali 3.jpg"
+                            alt="Tali wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i03_tali1.jpg" alt="Tali wood" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img
+                            src="./img/wood/i04_tali h.jpg"
+                            alt="Tali wood"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-container">
+                          <img src="./img/wood/i05_tali.jpg" alt="Tali wood" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-7">
-                  <div class="single-product-content">
-                    <form
-                      method="post"
-                      id="AddToCartForm"
-                      accept-charset="UTF-8"
-                      class="shopify-product-form"
-                      enctype="multipart/form-data"
-                    >
-                      <input
-                        type="hidden"
-                        name="form_type"
-                        value="product"
-                      /><input type="hidden" name="utf8" value="✓" />
+                  <div class="col-md-7">
+                    <div class="single-product-content">
                       <div class="product-details">
-                        <h1 id="title" class="single-product-name">Bossie</h1>
+                        <h1 id="title" class="single-product-name">Andoung</h1>
                         <div class="single-product-reviews">
                           <span
                             class="shopify-product-reviews-badge"
@@ -245,13 +273,11 @@
                           <div class="product-discount">
                             <span class="price"
                               ><span id="Price" class="money"
-                                >FAS €740</span
+                                >FAS €800</span
                               ></span
                             >
-                          </div>
-                        </div>
-                        <div class="single-product-price">
-                          <div class="product-discount">
+                             <br>
+                             <br>
                             <span class="price"
                               ><span id="Price" class="money"
                                 >AIC €450</span
@@ -259,180 +285,63 @@
                             >
                           </div>
                         </div>
+                       
 
                         <div id="info" class="product-info">
-                          ANDOUNG Sawn Timber AD CBM/MONTH 2METER UP 10
-                          CONTAINER OF 40 FEET /MONTH
+                          ANDOUNG Sawn Timber AD CBM/MONTH 2METER UP
+10 CONTAINER OF 40 FEET /MONTH 
                           <br /><br />
-                          Bosse is initially a pale pinkish brown, darkening
-                          with age to a more golden to medium brown. Pale
-                          yellowish sapwood is well defined. Can be highly
-                          figured, with grain patterns such as pommele being
-                          sought after in veneer form..
+                          The tropical species andoung is a light to medium-heavy, soft to medium-hard wood. It is not durable and is best used inside with no risk of dampness. The sapwood is not clearly demarcated, so it is necessary to treat the wood against dry wood borers.                          <br />
                           <br />
-                          <br />
-                          Grain can be straight, interlocked, wavy, or anything
-                          in between. (Veneer sheets also exhibit a wide range
-                          of grain patterns.) Texture is medium to fine, with a
-                          good natural luster.<br />
-                          <br />
-                          Results may vary depending upon the grain of the wood:
-                          interlocked and/or quartersawn pieces can pose a
-                          difficulty planing, with tearout being common. Silica
-                          is present in this wood, causing cutting edges to
-                          blunt and dull at an increased rate. Glues, turns, and
-                          finishes well.
-                        </div>
+                          It is used in the plywood industry due to its good peeling.                          <br />
+                          Veneer for interior of plywood, Interior joinery, Boxes and crates, Light carpentry, Flooring, Formwork, Veneer for back or face of plywood, Interior panelling, Current furniture or furniture components, Exterior joinery, Stairs (inside), Sliced veneer                        </div>
 
-                        <div class="single-product-action">
-                          <div class="product-variant-option">
-                            <select
-                              name="id"
-                              id="productSelect"
-                              class="product-single__variants"
-                              style="display: none"
-                            >
-                              <option
-                                selected="selected"
-                                data-sku="YQT71020193"
-                                value="19506517377094"
-                              >
-                                Default Title -
-                                <span class="money">$20.66 USD</span>
-                              </option>
-                            </select>
-                            <script>
-                              jQuery(function () {
-                                jQuery(".swatch :radio").change(function () {
-                                  var optionIndex = jQuery(this)
-                                    .closest(".swatch")
-                                    .attr("data-option-index");
-                                  var optionValue = jQuery(this).val();
-                                  jQuery(this)
-                                    .closest("form")
-                                    .find(".single-option-selector")
-                                    .eq(optionIndex)
-                                    .val(optionValue)
-                                    .trigger("change");
-                                });
-                              });
-                            </script>
+                        <div class="product-add-to-cart">
+                          <span class="control-label">Quantity</span>
+                          <div class="cart-plus-minus">
+                            <input
+                              class="cart-plus-minus-box"
+                              type="text"
+                              name="quantity"
+                              value="1"
+                            />
                           </div>
-                          <style>
-                            .product-variant-option .selector-wrapper {
-                              display: none;
-                            }
-                          </style>
-                          <div class="product-add-to-cart">
-                            <span class="control-label">Quantity</span>
-                            <div class="cart-plus-minus">
-                              <input
-                                class="cart-plus-minus-box"
-                                type="text"
-                                name="quantity"
-                                value="1"
-                              />
-                            </div>
-                            <div class="add">
-                              <button
-                                type="submit"
-                                class="add-to-cart ajax-spin-cart"
-                                id="AddToCart"
-                              >
-                                <i class="ion-bag"></i>
-                                <span
-                                  class="list-cart-title cart-title"
-                                  id="AddToCartText"
-                                  >Add to cart</span
-                                >
-                              </button>
 
-                              <div class="single-product-wishlist">
-                                <a
-                                  class="add-to-cart action-wishlist wishlist"
-                                  href="#"
-                                  title="Wishlist"
-                                  ><i class="fa fa-heart"></i
-                                ></a>
-                              </div>
+                          <div class="add">
+                            <button
+                              class="add-to-cart ajax-spin-cart"
+                              id="AddToCart"
+                            >
+                              <i class="ion-bag"></i>
+                              <span
+                                class="list-cart-title cart-title"
+                                id="AddToCartText"
+                                >Contact Us</span
+                              >
+                            </button>
+                            <script type="text/javascript">
+                              document.getElementById("AddToCart").onclick =
+                                function () {
+                                  location.href = "index.html#contact";
+                                };
+                            </script>
+                            <div class="single-product-wishlist">
+                              <a
+                                class="add-to-cart action-wishlist wishlist"
+                                href="#"
+                                title="Wishlist"
+                                ><i class="fa fa-heart"></i
+                              ></a>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <style type="text/css">
-            .product-details .countdown-timer-wrapper {
-              display: none !important;
-            }
-          </style>
-
-          <script>
-            function productZoom() {
-              $(".product-zoom").elevateZoom({
-                gallery: "ProductThumbs",
-                galleryActiveClass: "active",
-                zoomType: "inner",
-              });
-              $(".product-zoom").on("click", function (e) {
-                var ez = $(".product-zoom").data("elevateZoom");
-                $.fancybox(ez.getGalleryList());
-                return false;
-              });
-            }
-            function productZoomDisable() {
-              if ($(window).width() < 767) {
-                $(".zoomContainer").remove();
-                $(".product-zoom").removeData("elevateZoom");
-                $(".product-zoom").removeData("zoomImage");
-              } else {
-                productZoom();
-              }
-            }
-
-            productZoomDisable();
-
-            $(window).resize(function () {
-              productZoomDisable();
-            });
-          </script>
-          <script>
-            $(".product-thumbnail").owlCarousel({
-              loop: true,
-              center: true,
-              nav: true,
-              dots: false,
-              margin: 10,
-              autoplay: false,
-              autoplayTimeout: 5000,
-              navText: [
-                '<i class="fa fa-angle-left"></i>',
-                '<i class="fa fa-angle-right"></i>',
-              ],
-              item: 3,
-              responsive: {
-                0: {
-                  items: 2,
-                },
-                480: {
-                  items: 3,
-                },
-                992: {
-                  items: 3,
-                },
-                1170: {
-                  items: 3,
-                },
-                1200: {
-                  items: 3,
-                },
-              },
-            });
-          </script>
         </div>
       </main>
     </div>
@@ -446,10 +355,34 @@
         </p>
       </div>
     </div>
-    <script type="text/javascript" src="js/new.js"></script>
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      var galleryTop = new Swiper(".gallery-top", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        loopedSlides: 4,
+      });
+      var galleryThumbs = new Swiper(".gallery-thumbs", {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 4,
+      });
+      galleryTop.controller.control = galleryThumbs;
+      galleryThumbs.controller.control = galleryTop;
+    </script>
   </body>
 </html>
