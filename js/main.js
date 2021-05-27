@@ -47,5 +47,6 @@ function main() {
 }
 main();
 
-
-
+$(window).load(function () {
+  $(".preloader").fadeOut("slow");
+});

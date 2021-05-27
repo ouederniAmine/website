@@ -684,3 +684,15 @@ iper-container {
     width: 100%;
   }
 }
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-image: url("../js/1484.gif");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center;
+}
