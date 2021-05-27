@@ -360,7 +360,6 @@
                             </div>
                             <div class="add">
                               <button
-                                type="submit"
                                 class="add-to-cart ajax-spin-cart"
                                 id="AddToCart"
                               >
@@ -368,9 +367,15 @@
                                 <span
                                   class="list-cart-title cart-title"
                                   id="AddToCartText"
-                                  >Add to cart</span
+                                  >Contact Us</span
                                 >
                               </button>
+                              <script type="text/javascript">
+                                document.getElementById("AddToCart").onclick =
+                                  function () {
+                                    location.href = "index.html#contact";
+                                  };
+                              </script>
 
                               <div class="single-product-wishlist">
                                 <a

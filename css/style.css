@@ -624,3 +624,63 @@ iper-container {
 .gallery-thumbs .swiper-slide-active {
   opacity: 1;
 }
+@media screen and (max-width: 1024px) {
+  #sapeli {
+    position: absolute;
+    bottom: -3290px;
+  }
+  #wenge {
+    position: absolute;
+    bottom: -3290px;
+    left: 350px;
+  }
+}
+@media screen and (max-width: 993px) {
+  #sapeli {
+    position: absolute;
+    bottom: -5550px;
+    width: 360px;
+  }
+  #wenge {
+    position: absolute;
+    bottom: -4980px;
+    width: 360px;
+    left: 90px;
+  }
+}
+@media screen and (max-width: 880px) {
+  #sapeli {
+    position: absolute;
+    bottom: -5550px;
+    width: 360px;
+  }
+  #wenge {
+    position: absolute;
+    bottom: -4980px;
+    width: 360px;
+    left: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #sapeli {
+    position: absolute;
+    bottom: -5650px;
+    width: 360px;
+  }
+  #wenge {
+    position: absolute;
+    bottom: -5060px;
+    width: 360px;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 766px) {
+  #sapeli {
+    position: initial;
+    width: 100%;
+  }
+  #wenge {
+    position: initial;
+    width: 100%;
+  }
+}
